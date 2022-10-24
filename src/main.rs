@@ -25,7 +25,25 @@
 // const frames = [
 //   [10, 0], [10, 0], [10, 0], [10, 0], [10, 0], [10, 0], [10, 0], [10, 0], [10, 0], [10, 10, 10]
 // ]
-
 fn main() {
-    println!("Hello, world!");
+    let frames = [
+        [2, 0],
+        [4, 2],
+        [6, 0],
+        [2, 4],
+        [1, 5],
+        [7, 0],
+        [5, 2],
+        [7, 0],
+        [2, 6],
+        [8, 1],
+    ];
+
+    // println!("{:?}", frames)
+    // for idx in 0..frames.len() {
+    //     println!("index: {}, value:{:?}", idx, frames[idx]);
+    // }
+    for value in frames.iter() {
+        println!("{:?}", value)
+    }
 }
